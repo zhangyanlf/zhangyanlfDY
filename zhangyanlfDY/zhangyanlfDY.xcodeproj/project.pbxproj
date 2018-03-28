@@ -17,6 +17,10 @@
 		A4B45662206A34C000324451 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B45660206A34C000324451 /* Profile.storyboard */; };
 		A4B4566A206A3DA400324451 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B45669206A3DA400324451 /* HomeViewController.swift */; };
 		A4B4566D206A43D100324451 /* UIBarbuttonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4566C206A43D100324451 /* UIBarbuttonItem+Extension.swift */; };
+		A4D7283E206B29D60025E903 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D7283D206B29D60025E903 /* PageTitleView.swift */; };
+		A4D72840206B2C010025E903 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D7283F206B2C010025E903 /* Common.swift */; };
+		A4D72842206B463D0025E903 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D72841206B463D0025E903 /* PageContentView.swift */; };
+		A4D72844206B49860025E903 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D72843206B49860025E903 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		A4B45661206A34C000324451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = zhangyanlfDY/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
 		A4B45669206A3DA400324451 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A4B4566C206A43D100324451 /* UIBarbuttonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarbuttonItem+Extension.swift"; sourceTree = "<group>"; };
+		A4D7283D206B29D60025E903 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		A4D7283F206B2C010025E903 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		A4D72841206B463D0025E903 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		A4D72843206B49860025E903 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				A4B4566B206A435C00324451 /* Extension */,
+				A4D7283F206B2C010025E903 /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -132,10 +141,10 @@
 				A4B45666206A3D4800324451 /* View */,
 				A4B45667206A3D4800324451 /* Controller */,
 				A4B45649206A31CB00324451 /* Main.storyboard */,
-				A4B45660206A34C000324451 /* Profile.storyboard */,
-				A4B4565D206A349A00324451 /* Concern.storyboard */,
-				A4B4565A206A347400324451 /* Live.storyboard */,
 				A4B45657206A345200324451 /* Home.storyboard */,
+				A4B4565A206A347400324451 /* Live.storyboard */,
+				A4B4565D206A349A00324451 /* Concern.storyboard */,
+				A4B45660206A34C000324451 /* Profile.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -165,6 +174,8 @@
 		A4B45666206A3D4800324451 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A4D7283D206B29D60025E903 /* PageTitleView.swift */,
+				A4D72841206B463D0025E903 /* PageContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				A4B4566C206A43D100324451 /* UIBarbuttonItem+Extension.swift */,
+				A4D72843206B49860025E903 /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -267,8 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4D72844206B49860025E903 /* UIColor+Extension.swift in Sources */,
+				A4D7283E206B29D60025E903 /* PageTitleView.swift in Sources */,
+				A4D72842206B463D0025E903 /* PageContentView.swift in Sources */,
 				A4B45622206A11E500324451 /* AppDelegate.swift in Sources */,
 				A4B4566A206A3DA400324451 /* HomeViewController.swift in Sources */,
+				A4D72840206B2C010025E903 /* Common.swift in Sources */,
 				A4B4566D206A43D100324451 /* UIBarbuttonItem+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
