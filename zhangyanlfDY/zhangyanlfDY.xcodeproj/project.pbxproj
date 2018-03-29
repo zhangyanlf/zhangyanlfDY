@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A49E8B1A206C7EB500DFDB80 /* ZLCommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B19206C7EB500DFDB80 /* ZLCommendViewController.swift */; };
+		A49E8B1D206C899A00DFDB80 /* ZLCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B1B206C899A00DFDB80 /* ZLCollectionHeaderView.swift */; };
+		A49E8B1E206C899A00DFDB80 /* ZLCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A49E8B1C206C899A00DFDB80 /* ZLCollectionHeaderView.xib */; };
+		A49E8B21206C8DC700DFDB80 /* ZLCollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B1F206C8DC700DFDB80 /* ZLCollectionNormalCell.swift */; };
+		A49E8B22206C8DC700DFDB80 /* ZLCollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A49E8B20206C8DC700DFDB80 /* ZLCollectionNormalCell.xib */; };
 		A4B45622206A11E500324451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B45621206A11E500324451 /* AppDelegate.swift */; };
 		A4B45629206A11E500324451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B45628206A11E500324451 /* Assets.xcassets */; };
 		A4B4562C206A11E500324451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B4562A206A11E500324451 /* LaunchScreen.storyboard */; };
@@ -24,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A49E8B19206C7EB500DFDB80 /* ZLCommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCommendViewController.swift; sourceTree = "<group>"; };
+		A49E8B1B206C899A00DFDB80 /* ZLCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCollectionHeaderView.swift; sourceTree = "<group>"; };
+		A49E8B1C206C899A00DFDB80 /* ZLCollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLCollectionHeaderView.xib; sourceTree = "<group>"; };
+		A49E8B1F206C8DC700DFDB80 /* ZLCollectionNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCollectionNormalCell.swift; sourceTree = "<group>"; };
+		A49E8B20206C8DC700DFDB80 /* ZLCollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLCollectionNormalCell.xib; sourceTree = "<group>"; };
 		A4B4561E206A11E500324451 /* zhangyanlfDY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhangyanlfDY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B45621206A11E500324451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4B45628206A11E500324451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -152,6 +162,8 @@
 		A4B45663206A3D3300324451 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A49E8B1B206C899A00DFDB80 /* ZLCollectionHeaderView.swift */,
+				A49E8B1C206C899A00DFDB80 /* ZLCollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				A4B45669206A3DA400324451 /* HomeViewController.swift */,
+				A49E8B19206C7EB500DFDB80 /* ZLCommendViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,6 +189,8 @@
 			children = (
 				A4D7283D206B29D60025E903 /* PageTitleView.swift */,
 				A4D72841206B463D0025E903 /* PageContentView.swift */,
+				A49E8B1F206C8DC700DFDB80 /* ZLCollectionNormalCell.swift */,
+				A49E8B20206C8DC700DFDB80 /* ZLCollectionNormalCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -229,6 +244,7 @@
 		A4B45616206A11E500324451 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZL;
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = zhangyanlf;
@@ -263,6 +279,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4B4564A206A31CB00324451 /* Main.storyboard in Resources */,
+				A49E8B22206C8DC700DFDB80 /* ZLCollectionNormalCell.xib in Resources */,
+				A49E8B1E206C899A00DFDB80 /* ZLCollectionHeaderView.xib in Resources */,
 				A4B4562C206A11E500324451 /* LaunchScreen.storyboard in Resources */,
 				A4B45629206A11E500324451 /* Assets.xcassets in Resources */,
 				A4B4565C206A347400324451 /* Live.storyboard in Resources */,
@@ -279,12 +297,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A49E8B1A206C7EB500DFDB80 /* ZLCommendViewController.swift in Sources */,
+				A49E8B1D206C899A00DFDB80 /* ZLCollectionHeaderView.swift in Sources */,
 				A4D72844206B49860025E903 /* UIColor+Extension.swift in Sources */,
 				A4D7283E206B29D60025E903 /* PageTitleView.swift in Sources */,
 				A4D72842206B463D0025E903 /* PageContentView.swift in Sources */,
 				A4B45622206A11E500324451 /* AppDelegate.swift in Sources */,
 				A4B4566A206A3DA400324451 /* HomeViewController.swift in Sources */,
 				A4D72840206B2C010025E903 /* Common.swift in Sources */,
+				A49E8B21206C8DC700DFDB80 /* ZLCollectionNormalCell.swift in Sources */,
 				A4B4566D206A43D100324451 /* UIBarbuttonItem+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
