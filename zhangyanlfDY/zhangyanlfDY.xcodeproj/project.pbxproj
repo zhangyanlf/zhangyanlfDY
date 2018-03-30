@@ -17,6 +17,8 @@
 		A49E8B28206CC00400DFDB80 /* ZLNetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B27206CC00400DFDB80 /* ZLNetWorkTools.swift */; };
 		A4A321A2206DEA9800EC5227 /* ZLCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B1B206C899A00DFDB80 /* ZLCollectionHeaderView.swift */; };
 		A4A321A4206E234000EC5227 /* ZLCollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A321A3206E234000EC5227 /* ZLCollectionBaseCell.swift */; };
+		A4A321AC206E2D3800EC5227 /* ZLRecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A321AB206E2D3800EC5227 /* ZLRecommendCycleView.swift */; };
+		A4A321AE206E2D4000EC5227 /* ZLRecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A321AD206E2D4000EC5227 /* ZLRecommendCycleView.xib */; };
 		A4B45622206A11E500324451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B45621206A11E500324451 /* AppDelegate.swift */; };
 		A4B45629206A11E500324451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B45628206A11E500324451 /* Assets.xcassets */; };
 		A4B4562C206A11E500324451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B4562A206A11E500324451 /* LaunchScreen.storyboard */; };
@@ -49,6 +51,8 @@
 		A49E8B24206CB05700DFDB80 /* ZLCollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLCollectionPrettyCell.xib; sourceTree = "<group>"; };
 		A49E8B27206CC00400DFDB80 /* ZLNetWorkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLNetWorkTools.swift; sourceTree = "<group>"; };
 		A4A321A3206E234000EC5227 /* ZLCollectionBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCollectionBaseCell.swift; sourceTree = "<group>"; };
+		A4A321AB206E2D3800EC5227 /* ZLRecommendCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLRecommendCycleView.swift; sourceTree = "<group>"; };
+		A4A321AD206E2D4000EC5227 /* ZLRecommendCycleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLRecommendCycleView.xib; sourceTree = "<group>"; };
 		A4B4561E206A11E500324451 /* zhangyanlfDY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhangyanlfDY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B45621206A11E500324451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4B45628206A11E500324451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -197,6 +201,8 @@
 			children = (
 				A49E8B1B206C899A00DFDB80 /* ZLCollectionHeaderView.swift */,
 				A49E8B1C206C899A00DFDB80 /* ZLCollectionHeaderView.xib */,
+				A4A321AB206E2D3800EC5227 /* ZLRecommendCycleView.swift */,
+				A4A321AD206E2D4000EC5227 /* ZLRecommendCycleView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -339,6 +345,7 @@
 			files = (
 				A4B4564A206A31CB00324451 /* Main.storyboard in Resources */,
 				A49E8B22206C8DC700DFDB80 /* ZLCollectionNormalCell.xib in Resources */,
+				A4A321AE206E2D4000EC5227 /* ZLRecommendCycleView.xib in Resources */,
 				A49E8B1E206C899A00DFDB80 /* ZLCollectionHeaderView.xib in Resources */,
 				A4B4562C206A11E500324451 /* LaunchScreen.storyboard in Resources */,
 				A4B45629206A11E500324451 /* Assets.xcassets in Resources */,
@@ -429,6 +436,7 @@
 				A49E8B21206C8DC700DFDB80 /* ZLCollectionNormalCell.swift in Sources */,
 				A4A321A2206DEA9800EC5227 /* ZLCollectionHeaderView.swift in Sources */,
 				A4B4566D206A43D100324451 /* UIBarbuttonItem+Extension.swift in Sources */,
+				A4A321AC206E2D3800EC5227 /* ZLRecommendCycleView.swift in Sources */,
 				A49E8B25206CB05700DFDB80 /* ZLCollectionPrettyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

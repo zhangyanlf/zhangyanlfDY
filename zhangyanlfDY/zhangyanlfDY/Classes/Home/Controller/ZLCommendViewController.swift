@@ -13,6 +13,8 @@ private let zNormalItemH: CGFloat = zItemW * 3 / 4
 private let zPrettyItemH: CGFloat = zItemW * 4 / 3
 private let zHeaderViewH: CGFloat = 50
 
+private let zCycleViewH :CGFloat = zScreenW * 3 / 8
+
 private let zNormalCellID = "zNormalCellID"
 private let zPrettyCellID = "zPrettyCellID"
 private let zHeaderViewID = "zHeaderViewID"
@@ -41,6 +43,12 @@ class ZLCommendViewController: UIViewController {
        
     }()
     
+    private lazy var cycleView : ZLRecommendCycleView = {
+       let cycleView = ZLRecommendCycleView.recommendCycleView()
+        cycleView.frame = CGRect(x: 0, y: -zCycleViewH, width: zScreenW, height: zCycleViewH)
+        return cycleView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -64,6 +72,12 @@ extension ZLCommendViewController {
     private func setupUI() {
         //添加collectionView
         view.addSubview(collectionView)
+        
+        //2.将cycleView添加到collectionView
+        collectionView.addSubview(cycleView)
+        
+        //3.创建collectionView内边距
+        collectionView.contentInset = UIEdgeInsets(top: zCycleViewH, left: 0, bottom: 0, right: 0)
     }
 }
 
