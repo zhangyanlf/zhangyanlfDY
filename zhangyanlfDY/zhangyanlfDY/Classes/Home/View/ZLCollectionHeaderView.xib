@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="ZLCollectionHeaderView" customModule="zhangyanlfDY" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
@@ -43,7 +43,7 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tz-rv-GWO">
                     <rect key="frame" x="33" y="21.5" width="40" height="18"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="40" id="gBX-Or-Qgq"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="gBX-Or-Qgq"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="textColor"/>
@@ -63,7 +63,11 @@
                 <constraint firstItem="1Tz-rv-GWO" firstAttribute="leading" secondItem="fif-xf-Fq0" secondAttribute="trailing" constant="5" id="pdA-RF-0r7"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
-            <point key="canvasLocation" x="-5" y="-65"/>
+            <connections>
+                <outlet property="iconImage" destination="fif-xf-Fq0" id="QLR-4m-tZq"/>
+                <outlet property="titleLabel" destination="1Tz-rv-GWO" id="xuv-Gi-U3U"/>
+            </connections>
+            <point key="canvasLocation" x="205" y="-66"/>
         </collectionReusableView>
     </objects>
     <resources>

@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BD550EE63256D3A65C28CDE /* Pods_zhangyanlfDY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E3FBA58F66EAA93F6483CB /* Pods_zhangyanlfDY.framework */; };
 		A49E8B1A206C7EB500DFDB80 /* ZLCommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B19206C7EB500DFDB80 /* ZLCommendViewController.swift */; };
-		A49E8B1D206C899A00DFDB80 /* ZLCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B1B206C899A00DFDB80 /* ZLCollectionHeaderView.swift */; };
 		A49E8B1E206C899A00DFDB80 /* ZLCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A49E8B1C206C899A00DFDB80 /* ZLCollectionHeaderView.xib */; };
 		A49E8B21206C8DC700DFDB80 /* ZLCollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B1F206C8DC700DFDB80 /* ZLCollectionNormalCell.swift */; };
 		A49E8B22206C8DC700DFDB80 /* ZLCollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A49E8B20206C8DC700DFDB80 /* ZLCollectionNormalCell.xib */; };
+		A49E8B25206CB05700DFDB80 /* ZLCollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B23206CB05700DFDB80 /* ZLCollectionPrettyCell.swift */; };
+		A49E8B26206CB05700DFDB80 /* ZLCollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A49E8B24206CB05700DFDB80 /* ZLCollectionPrettyCell.xib */; };
+		A49E8B28206CC00400DFDB80 /* ZLNetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B27206CC00400DFDB80 /* ZLNetWorkTools.swift */; };
+		A4A321A2206DEA9800EC5227 /* ZLCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B1B206C899A00DFDB80 /* ZLCollectionHeaderView.swift */; };
+		A4A321A4206E234000EC5227 /* ZLCollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A321A3206E234000EC5227 /* ZLCollectionBaseCell.swift */; };
 		A4B45622206A11E500324451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B45621206A11E500324451 /* AppDelegate.swift */; };
 		A4B45629206A11E500324451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B45628206A11E500324451 /* Assets.xcassets */; };
 		A4B4562C206A11E500324451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B4562A206A11E500324451 /* LaunchScreen.storyboard */; };
@@ -22,6 +27,10 @@
 		A4B45662206A34C000324451 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B45660206A34C000324451 /* Profile.storyboard */; };
 		A4B4566A206A3DA400324451 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B45669206A3DA400324451 /* HomeViewController.swift */; };
 		A4B4566D206A43D100324451 /* UIBarbuttonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4566C206A43D100324451 /* UIBarbuttonItem+Extension.swift */; };
+		A4BF8CD5206CCD43007FCFFA /* ZLCommenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BF8CD4206CCD43007FCFFA /* ZLCommenViewModel.swift */; };
+		A4BF8CD7206CD513007FCFFA /* NSData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BF8CD6206CD513007FCFFA /* NSData+Extension.swift */; };
+		A4BF8CD9206CDE68007FCFFA /* ZLAnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BF8CD8206CDE68007FCFFA /* ZLAnchorGroup.swift */; };
+		A4BF8CDB206CE3C8007FCFFA /* ZLAnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BF8CDA206CE3C8007FCFFA /* ZLAnchorModel.swift */; };
 		A4D7283E206B29D60025E903 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D7283D206B29D60025E903 /* PageTitleView.swift */; };
 		A4D72840206B2C010025E903 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D7283F206B2C010025E903 /* Common.swift */; };
 		A4D72842206B463D0025E903 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D72841206B463D0025E903 /* PageContentView.swift */; };
@@ -29,11 +38,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13106732AB8A74D35F4974A7 /* Pods-zhangyanlfDY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhangyanlfDY.release.xcconfig"; path = "Pods/Target Support Files/Pods-zhangyanlfDY/Pods-zhangyanlfDY.release.xcconfig"; sourceTree = "<group>"; };
+		5E1C09CB8A0E87E8ADB157E0 /* Pods-zhangyanlfDY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhangyanlfDY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zhangyanlfDY/Pods-zhangyanlfDY.debug.xcconfig"; sourceTree = "<group>"; };
 		A49E8B19206C7EB500DFDB80 /* ZLCommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCommendViewController.swift; sourceTree = "<group>"; };
 		A49E8B1B206C899A00DFDB80 /* ZLCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCollectionHeaderView.swift; sourceTree = "<group>"; };
 		A49E8B1C206C899A00DFDB80 /* ZLCollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLCollectionHeaderView.xib; sourceTree = "<group>"; };
 		A49E8B1F206C8DC700DFDB80 /* ZLCollectionNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCollectionNormalCell.swift; sourceTree = "<group>"; };
 		A49E8B20206C8DC700DFDB80 /* ZLCollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLCollectionNormalCell.xib; sourceTree = "<group>"; };
+		A49E8B23206CB05700DFDB80 /* ZLCollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCollectionPrettyCell.swift; sourceTree = "<group>"; };
+		A49E8B24206CB05700DFDB80 /* ZLCollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLCollectionPrettyCell.xib; sourceTree = "<group>"; };
+		A49E8B27206CC00400DFDB80 /* ZLNetWorkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLNetWorkTools.swift; sourceTree = "<group>"; };
+		A4A321A3206E234000EC5227 /* ZLCollectionBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCollectionBaseCell.swift; sourceTree = "<group>"; };
 		A4B4561E206A11E500324451 /* zhangyanlfDY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhangyanlfDY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B45621206A11E500324451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4B45628206A11E500324451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,10 +61,15 @@
 		A4B45661206A34C000324451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = zhangyanlfDY/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
 		A4B45669206A3DA400324451 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A4B4566C206A43D100324451 /* UIBarbuttonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarbuttonItem+Extension.swift"; sourceTree = "<group>"; };
+		A4BF8CD4206CCD43007FCFFA /* ZLCommenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCommenViewModel.swift; sourceTree = "<group>"; };
+		A4BF8CD6206CD513007FCFFA /* NSData+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSData+Extension.swift"; sourceTree = "<group>"; };
+		A4BF8CD8206CDE68007FCFFA /* ZLAnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLAnchorGroup.swift; sourceTree = "<group>"; };
+		A4BF8CDA206CE3C8007FCFFA /* ZLAnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLAnchorModel.swift; sourceTree = "<group>"; };
 		A4D7283D206B29D60025E903 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		A4D7283F206B2C010025E903 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		A4D72841206B463D0025E903 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		A4D72843206B49860025E903 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		C7E3FBA58F66EAA93F6483CB /* Pods_zhangyanlfDY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zhangyanlfDY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,17 +77,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD550EE63256D3A65C28CDE /* Pods_zhangyanlfDY.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		644BA2C380E3273740A6EEF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7E3FBA58F66EAA93F6483CB /* Pods_zhangyanlfDY.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A4B45615206A11E500324451 = {
 			isa = PBXGroup;
 			children = (
 				A4B45620206A11E500324451 /* zhangyanlfDY */,
 				A4B4561F206A11E500324451 /* Products */,
+				A9570D4CC06CD65CECBEF80A /* Pods */,
+				644BA2C380E3273740A6EEF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +138,7 @@
 		A4B45634206A239100324451 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A4BF8CD3206CCD23007FCFFA /* ViewModel */,
 				A4B45665206A3D3300324451 /* Model */,
 				A4B45663206A3D3300324451 /* View */,
 				A4B45664206A3D3300324451 /* Controller */,
@@ -119,6 +151,7 @@
 			children = (
 				A4B4566B206A435C00324451 /* Extension */,
 				A4D7283F206B2C010025E903 /* Common.swift */,
+				A49E8B27206CC00400DFDB80 /* ZLNetWorkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -191,6 +224,9 @@
 				A4D72841206B463D0025E903 /* PageContentView.swift */,
 				A49E8B1F206C8DC700DFDB80 /* ZLCollectionNormalCell.swift */,
 				A49E8B20206C8DC700DFDB80 /* ZLCollectionNormalCell.xib */,
+				A49E8B23206CB05700DFDB80 /* ZLCollectionPrettyCell.swift */,
+				A49E8B24206CB05700DFDB80 /* ZLCollectionPrettyCell.xib */,
+				A4A321A3206E234000EC5227 /* ZLCollectionBaseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,6 +241,8 @@
 		A4B45668206A3D4800324451 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A4BF8CD8206CDE68007FCFFA /* ZLAnchorGroup.swift */,
+				A4BF8CDA206CE3C8007FCFFA /* ZLAnchorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,8 +252,26 @@
 			children = (
 				A4B4566C206A43D100324451 /* UIBarbuttonItem+Extension.swift */,
 				A4D72843206B49860025E903 /* UIColor+Extension.swift */,
+				A4BF8CD6206CD513007FCFFA /* NSData+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		A4BF8CD3206CCD23007FCFFA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A4BF8CD4206CCD43007FCFFA /* ZLCommenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A9570D4CC06CD65CECBEF80A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E1C09CB8A0E87E8ADB157E0 /* Pods-zhangyanlfDY.debug.xcconfig */,
+				13106732AB8A74D35F4974A7 /* Pods-zhangyanlfDY.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,9 +281,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4B45630206A11E500324451 /* Build configuration list for PBXNativeTarget "zhangyanlfDY" */;
 			buildPhases = (
+				F31C61C89C10C1F1739826C3 /* [CP] Check Pods Manifest.lock */,
 				A4B4561A206A11E500324451 /* Sources */,
 				A4B4561B206A11E500324451 /* Frameworks */,
 				A4B4561C206A11E500324451 /* Resources */,
+				56A48AFAEB3C3FEF9FACA099 /* [CP] Embed Pods Frameworks */,
+				FBD5EC1DCD01F00C5BB618D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,6 +344,7 @@
 				A4B45629206A11E500324451 /* Assets.xcassets in Resources */,
 				A4B4565C206A347400324451 /* Live.storyboard in Resources */,
 				A4B45659206A345200324451 /* Home.storyboard in Resources */,
+				A49E8B26206CB05700DFDB80 /* ZLCollectionPrettyCell.xib in Resources */,
 				A4B45662206A34C000324451 /* Profile.storyboard in Resources */,
 				A4B4565F206A349A00324451 /* Concern.storyboard in Resources */,
 			);
@@ -292,21 +352,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56A48AFAEB3C3FEF9FACA099 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-zhangyanlfDY/Pods-zhangyanlfDY-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zhangyanlfDY/Pods-zhangyanlfDY-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F31C61C89C10C1F1739826C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zhangyanlfDY-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBD5EC1DCD01F00C5BB618D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zhangyanlfDY/Pods-zhangyanlfDY-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A4B4561A206A11E500324451 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BF8CDB206CE3C8007FCFFA /* ZLAnchorModel.swift in Sources */,
+				A4BF8CD9206CDE68007FCFFA /* ZLAnchorGroup.swift in Sources */,
 				A49E8B1A206C7EB500DFDB80 /* ZLCommendViewController.swift in Sources */,
-				A49E8B1D206C899A00DFDB80 /* ZLCollectionHeaderView.swift in Sources */,
 				A4D72844206B49860025E903 /* UIColor+Extension.swift in Sources */,
+				A4A321A4206E234000EC5227 /* ZLCollectionBaseCell.swift in Sources */,
 				A4D7283E206B29D60025E903 /* PageTitleView.swift in Sources */,
 				A4D72842206B463D0025E903 /* PageContentView.swift in Sources */,
+				A4BF8CD5206CCD43007FCFFA /* ZLCommenViewModel.swift in Sources */,
 				A4B45622206A11E500324451 /* AppDelegate.swift in Sources */,
 				A4B4566A206A3DA400324451 /* HomeViewController.swift in Sources */,
+				A4BF8CD7206CD513007FCFFA /* NSData+Extension.swift in Sources */,
 				A4D72840206B2C010025E903 /* Common.swift in Sources */,
+				A49E8B28206CC00400DFDB80 /* ZLNetWorkTools.swift in Sources */,
 				A49E8B21206C8DC700DFDB80 /* ZLCollectionNormalCell.swift in Sources */,
+				A4A321A2206DEA9800EC5227 /* ZLCollectionHeaderView.swift in Sources */,
 				A4B4566D206A43D100324451 /* UIBarbuttonItem+Extension.swift in Sources */,
+				A49E8B25206CB05700DFDB80 /* ZLCollectionPrettyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +588,7 @@
 		};
 		A4B45631206A11E500324451 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E1C09CB8A0E87E8ADB157E0 /* Pods-zhangyanlfDY.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAssets;
@@ -482,6 +606,7 @@
 		};
 		A4B45632206A11E500324451 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13106732AB8A74D35F4974A7 /* Pods-zhangyanlfDY.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAssets;

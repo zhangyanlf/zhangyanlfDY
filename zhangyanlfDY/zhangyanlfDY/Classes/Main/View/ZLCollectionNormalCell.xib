@@ -42,20 +42,20 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zhangyanlf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnb-Fl-Nyn">
-                        <rect key="frame" x="5" y="116" width="75" height="18"/>
+                        <rect key="frame" x="5" y="118" width="80" height="16"/>
                         <constraints>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="37.5" id="vnQ-e8-Lx5"/>
+                            <constraint firstAttribute="width" constant="80" id="vnQ-e8-Lx5"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgR-wd-W4j">
-                        <rect key="frame" x="203" y="117" width="71" height="17"/>
+                        <rect key="frame" x="207" y="118" width="67" height="16"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="vkI-R6-Ev8"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <state key="normal" title="520在线" image="Image_online"/>
                     </button>
                 </subviews>
@@ -77,7 +77,13 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="279" height="168"/>
-            <point key="canvasLocation" x="-31.5" y="-26"/>
+            <connections>
+                <outlet property="iconImageView" destination="nmp-8v-W9n" id="1GI-uH-hDg"/>
+                <outlet property="nickNameLabel" destination="nnb-Fl-Nyn" id="Gm9-6V-Sdq"/>
+                <outlet property="onLineNumber" destination="xgR-wd-W4j" id="UCU-sr-jma"/>
+                <outlet property="roomNameLabel" destination="Te1-6h-C5m" id="EOb-bx-Um2"/>
+            </connections>
+            <point key="canvasLocation" x="-265.5" y="-30"/>
         </collectionViewCell>
     </objects>
     <resources>

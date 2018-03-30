@@ -43,12 +43,19 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //1.设置界面
         setupUI()
+        
+        
         
     }
 
 
 }
+
+
+
+
 
 //MARK: - 设置UI界面
 extension HomeViewController {

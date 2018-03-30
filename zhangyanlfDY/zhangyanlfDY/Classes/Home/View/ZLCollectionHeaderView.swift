@@ -10,9 +10,20 @@ import UIKit
 
 class ZLCollectionHeaderView: UICollectionReusableView {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    //MARK: - 控件属性
+    /// 标题名称
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    /// 标题图片
+    @IBOutlet weak var iconImage: UIImageView!
+    
+    //定义模型属性
+    var group : ZLAnchorGroup? {
+        didSet {
+            titleLabel.text = group?.tag_name
+            iconImage.image = UIImage(named: group?.icon_name ?? "home_header_normal")
+        }
     }
+    
     
 }

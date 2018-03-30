@@ -1,0 +1,6 @@
+framework module Pods_zhangyanlfDY {
+  umbrella header "Pods-zhangyanlfDY-umbrella.h"
+
+  export *
+  module * { export * }
+}
