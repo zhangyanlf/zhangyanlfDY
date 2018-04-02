@@ -11,6 +11,10 @@
 		A498C7D22071C3D100AB0B62 /* ZLCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498C7D12071C3D100AB0B62 /* ZLCycleModel.swift */; };
 		A498C7D52071CCD000AB0B62 /* ZLCollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498C7D32071CCD000AB0B62 /* ZLCollectionCycleCell.swift */; };
 		A498C7D62071CCD000AB0B62 /* ZLCollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A498C7D42071CCD000AB0B62 /* ZLCollectionCycleCell.xib */; };
+		A498C7DA2071F95C00AB0B62 /* ZLCommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498C7D92071F95C00AB0B62 /* ZLCommendGameView.swift */; };
+		A498C7DC2071F97200AB0B62 /* ZLCommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A498C7DB2071F97200AB0B62 /* ZLCommendGameView.xib */; };
+		A498C7DF2072048900AB0B62 /* ZLCollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498C7DD2072048900AB0B62 /* ZLCollectionGameCell.swift */; };
+		A498C7E02072048900AB0B62 /* ZLCollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A498C7DE2072048900AB0B62 /* ZLCollectionGameCell.xib */; };
 		A49E8B1A206C7EB500DFDB80 /* ZLCommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B19206C7EB500DFDB80 /* ZLCommendViewController.swift */; };
 		A49E8B1E206C899A00DFDB80 /* ZLCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A49E8B1C206C899A00DFDB80 /* ZLCollectionHeaderView.xib */; };
 		A49E8B21206C8DC700DFDB80 /* ZLCollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B1F206C8DC700DFDB80 /* ZLCollectionNormalCell.swift */; };
@@ -48,6 +52,10 @@
 		A498C7D12071C3D100AB0B62 /* ZLCycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCycleModel.swift; sourceTree = "<group>"; };
 		A498C7D32071CCD000AB0B62 /* ZLCollectionCycleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCollectionCycleCell.swift; sourceTree = "<group>"; };
 		A498C7D42071CCD000AB0B62 /* ZLCollectionCycleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLCollectionCycleCell.xib; sourceTree = "<group>"; };
+		A498C7D92071F95C00AB0B62 /* ZLCommendGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCommendGameView.swift; sourceTree = "<group>"; };
+		A498C7DB2071F97200AB0B62 /* ZLCommendGameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLCommendGameView.xib; sourceTree = "<group>"; };
+		A498C7DD2072048900AB0B62 /* ZLCollectionGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCollectionGameCell.swift; sourceTree = "<group>"; };
+		A498C7DE2072048900AB0B62 /* ZLCollectionGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLCollectionGameCell.xib; sourceTree = "<group>"; };
 		A49E8B19206C7EB500DFDB80 /* ZLCommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCommendViewController.swift; sourceTree = "<group>"; };
 		A49E8B1B206C899A00DFDB80 /* ZLCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCollectionHeaderView.swift; sourceTree = "<group>"; };
 		A49E8B1C206C899A00DFDB80 /* ZLCollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLCollectionHeaderView.xib; sourceTree = "<group>"; };
@@ -211,6 +219,10 @@
 				A4A321AD206E2D4000EC5227 /* ZLRecommendCycleView.xib */,
 				A498C7D32071CCD000AB0B62 /* ZLCollectionCycleCell.swift */,
 				A498C7D42071CCD000AB0B62 /* ZLCollectionCycleCell.xib */,
+				A498C7D92071F95C00AB0B62 /* ZLCommendGameView.swift */,
+				A498C7DB2071F97200AB0B62 /* ZLCommendGameView.xib */,
+				A498C7DD2072048900AB0B62 /* ZLCollectionGameCell.swift */,
+				A498C7DE2072048900AB0B62 /* ZLCollectionGameCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -353,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A498C7D62071CCD000AB0B62 /* ZLCollectionCycleCell.xib in Resources */,
+				A498C7DC2071F97200AB0B62 /* ZLCommendGameView.xib in Resources */,
 				A4B4564A206A31CB00324451 /* Main.storyboard in Resources */,
 				A49E8B22206C8DC700DFDB80 /* ZLCollectionNormalCell.xib in Resources */,
 				A4A321AE206E2D4000EC5227 /* ZLRecommendCycleView.xib in Resources */,
@@ -360,6 +373,7 @@
 				A4B4562C206A11E500324451 /* LaunchScreen.storyboard in Resources */,
 				A4B45629206A11E500324451 /* Assets.xcassets in Resources */,
 				A4B4565C206A347400324451 /* Live.storyboard in Resources */,
+				A498C7E02072048900AB0B62 /* ZLCollectionGameCell.xib in Resources */,
 				A4B45659206A345200324451 /* Home.storyboard in Resources */,
 				A49E8B26206CB05700DFDB80 /* ZLCollectionPrettyCell.xib in Resources */,
 				A4B45662206A34C000324451 /* Profile.storyboard in Resources */,
@@ -433,9 +447,11 @@
 				A4BF8CDB206CE3C8007FCFFA /* ZLAnchorModel.swift in Sources */,
 				A4BF8CD9206CDE68007FCFFA /* ZLAnchorGroup.swift in Sources */,
 				A49E8B1A206C7EB500DFDB80 /* ZLCommendViewController.swift in Sources */,
+				A498C7DA2071F95C00AB0B62 /* ZLCommendGameView.swift in Sources */,
 				A4D72844206B49860025E903 /* UIColor+Extension.swift in Sources */,
 				A4A321A4206E234000EC5227 /* ZLCollectionBaseCell.swift in Sources */,
 				A4D7283E206B29D60025E903 /* PageTitleView.swift in Sources */,
+				A498C7DF2072048900AB0B62 /* ZLCollectionGameCell.swift in Sources */,
 				A4D72842206B463D0025E903 /* PageContentView.swift in Sources */,
 				A4BF8CD5206CCD43007FCFFA /* ZLCommenViewModel.swift in Sources */,
 				A4B45622206A11E500324451 /* AppDelegate.swift in Sources */,

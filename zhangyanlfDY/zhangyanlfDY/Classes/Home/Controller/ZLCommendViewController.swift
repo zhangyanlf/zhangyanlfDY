@@ -14,6 +14,7 @@ private let zPrettyItemH: CGFloat = zItemW * 4 / 3
 private let zHeaderViewH: CGFloat = 50
 
 private let zCycleViewH :CGFloat = zScreenW * 3 / 8
+private let zGameViewH :CGFloat = 90
 
 private let zNormalCellID = "zNormalCellID"
 private let zPrettyCellID = "zPrettyCellID"
@@ -45,8 +46,14 @@ class ZLCommendViewController: UIViewController {
     
     private lazy var cycleView : ZLRecommendCycleView = {
        let cycleView = ZLRecommendCycleView.recommendCycleView()
-        cycleView.frame = CGRect(x: 0, y: -zCycleViewH, width: zScreenW, height: zCycleViewH)
+        cycleView.frame = CGRect(x: 0, y: -(zCycleViewH + zGameViewH), width: zScreenW, height: zCycleViewH)
         return cycleView
+    }()
+    
+    private lazy var gameView : ZLCommendGameView = {
+        let gameView = ZLCommendGameView.zlcommendGameView()
+        gameView.frame = CGRect(x: 0, y: -zGameViewH, width: zScreenW, height: zGameViewH)
+        return gameView
     }()
     
     override func viewDidLoad() {
@@ -64,7 +71,10 @@ extension ZLCommendViewController {
     private func loadData() {
         //1.请求推荐数据
         commenViewModel.requestData {
+            //1.1展示推荐数据
             self.collectionView.reloadData()
+            //1.2 将数据传给GameView
+            self.gameView.groups = self.commenViewModel.anchorGroups
         }
         //2.请求轮播数据
         commenViewModel.requestCycleDat {
@@ -81,8 +91,10 @@ extension ZLCommendViewController {
         //2.将cycleView添加到collectionView
         collectionView.addSubview(cycleView)
         
-        //3.创建collectionView内边距
-        collectionView.contentInset = UIEdgeInsets(top: zCycleViewH, left: 0, bottom: 0, right: 0)
+        //3.将gameView添加到collectionView
+        collectionView.addSubview(gameView)
+        //4.创建collectionView内边距
+        collectionView.contentInset = UIEdgeInsets(top: zCycleViewH + zGameViewH, left: 0, bottom: 0, right: 0)
     }
 }
 

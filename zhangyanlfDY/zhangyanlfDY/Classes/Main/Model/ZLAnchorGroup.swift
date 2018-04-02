@@ -25,6 +25,9 @@ class ZLAnchorGroup: NSObject {
     /// 组显示的图标
     @objc var icon_name: String = "home_header_normal"
     
+    /// 游戏对用的图标
+    @objc var icon_url: String = ""
+    
     @objc lazy var anchors : [ZLAnchorModel] = [ZLAnchorModel]()
     
     /// MARK: - 构造函数

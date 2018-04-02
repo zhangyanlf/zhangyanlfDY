@@ -105,7 +105,7 @@ extension ZLCommenViewModel {
         
     }
  
-    /// 请求轮播书记
+    /// 请求轮播数据
     func requestCycleDat(finishCallBack: @escaping () -> ()) {
         ZLNetWorkTools.requestDate(type: .GET, urlString: "http://www.douyutv.com/api/v1/slide/6", paramters: ["version" : "2.300"]) { (result) in
             //1.获取整体数据
@@ -121,4 +121,7 @@ extension ZLCommenViewModel {
         }
     }
 
+
+    
+    
 }
