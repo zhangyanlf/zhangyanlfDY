@@ -13,8 +13,16 @@ private let zCycleCellID = "zCycleCellID"
 
 class ZLRecommendCycleView: UIView {
     
-    //MARK: - 控件属性
+    ///MARK: -  定义属性
+    var cycleModels : [ZLCycleModel]? {
+        didSet {
+            collectionView.reloadData()
+            pageControl.numberOfPages = (cycleModels?.count)!
+        }
+    }
     
+    
+    //MARK: - 控件属性
     ///collectionView
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -27,7 +35,8 @@ class ZLRecommendCycleView: UIView {
         autoresizingMask = UIViewAutoresizing()
         
         //注册Cell
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: zCycleCellID)
+        
+        collectionView.register(UINib(nibName: "ZLCollectionCycleCell", bundle: nil), forCellWithReuseIdentifier: zCycleCellID)
         
         
         
@@ -42,6 +51,7 @@ class ZLRecommendCycleView: UIView {
         layout.minimumInteritemSpacing = 0
         layout.scrollDirection = .horizontal
         collectionView.isPagingEnabled = true
+        
     }
 
 }
@@ -57,15 +67,28 @@ extension ZLRecommendCycleView {
 //MARK: - 遵守UICollectionViewDataSource代理
 extension ZLRecommendCycleView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return cycleModels?.count ?? 0
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: zCycleCellID, for: indexPath)
-        cell.backgroundColor  = indexPath.item % 2 == 0 ? UIColor.red : UIColor.brown
+        
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: zCycleCellID, for: indexPath) as! ZLCollectionCycleCell
+        cell.cycleModel = cycleModels![indexPath.item]
+       
         return cell
         
     }
 }
-
+//MARK: - 遵守UICollectionViewDataSource代理
+extension ZLRecommendCycleView: UICollectionViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        //1.获取滚动的偏移量
+        let offsetX = scrollView.contentOffset.x + scrollView.bounds.width * 0.5
+        //2.计算pageCotroller 的 currentIndex
+        pageControl.currentPage = Int(offsetX / scrollView.bounds.width)
+        
+    }
+}

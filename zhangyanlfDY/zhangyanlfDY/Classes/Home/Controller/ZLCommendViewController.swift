@@ -62,8 +62,13 @@ class ZLCommendViewController: UIViewController {
 //MARK: - 发送网络请求
 extension ZLCommendViewController {
     private func loadData() {
+        //1.请求推荐数据
         commenViewModel.requestData {
             self.collectionView.reloadData()
+        }
+        //2.请求轮播数据
+        commenViewModel.requestCycleDat {
+            self.cycleView.cycleModels = self.commenViewModel.cycleModels
         }
     }
 }

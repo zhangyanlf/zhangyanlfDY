@@ -12,12 +12,15 @@ import Foundation
 class ZLCommenViewModel {
     //MARK: - 懒加载数组
     lazy var anchorGroups: [ZLAnchorGroup] = [ZLAnchorGroup]()
+    lazy var cycleModels: [ZLCycleModel] = [ZLCycleModel]()
     private lazy var bigDataGroup: ZLAnchorGroup = ZLAnchorGroup()
     private lazy var prettyGroup: ZLAnchorGroup = ZLAnchorGroup()
+    
 }
 
 //MARK: - 发送网络请求
 extension ZLCommenViewModel {
+    ///请求推荐数据
     func requestData(finishCallBack:@escaping () -> ()) {
         //1.自定义参数
         let parameters = ["limit" : "4", "offset" : "0", "time": Date.getCurrentTime()]
@@ -101,4 +104,21 @@ extension ZLCommenViewModel {
         
         
     }
+ 
+    /// 请求轮播书记
+    func requestCycleDat(finishCallBack: @escaping () -> ()) {
+        ZLNetWorkTools.requestDate(type: .GET, urlString: "http://www.douyutv.com/api/v1/slide/6", paramters: ["version" : "2.300"]) { (result) in
+            //1.获取整体数据
+            guard let resultDic = result as? [String : NSObject] else { return }
+            //2.根据data的key获取数据
+            guard let resultArray = resultDic["data"] as? [[String : NSObject]] else { return }
+            //3.遍历字典转模型
+            for dict in resultArray {
+                self.cycleModels.append(ZLCycleModel(dict: dict))
+            }
+            
+            finishCallBack()
+        }
+    }
+
 }

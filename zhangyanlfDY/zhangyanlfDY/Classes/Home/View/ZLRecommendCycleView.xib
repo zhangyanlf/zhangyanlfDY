@@ -30,8 +30,8 @@
                         <outlet property="delegate" destination="iN0-l3-epB" id="vIN-HK-hvw"/>
                     </connections>
                 </collectionView>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="AjW-xE-Yh1">
-                    <rect key="frame" x="326" y="113" width="39" height="37"/>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="AjW-xE-Yh1">
+                    <rect key="frame" x="310" y="117" width="55" height="37"/>
                     <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="currentPageIndicatorTintColor" red="0.99607843139999996" green="0.24313725489999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </pageControl>
@@ -40,7 +40,7 @@
             <constraints>
                 <constraint firstItem="xzW-VF-duZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="8KK-8T-Aci"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xzW-VF-duZ" secondAttribute="trailing" id="QSL-vo-ZJa"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="AjW-xE-Yh1" secondAttribute="bottom" id="dqk-S3-LFm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="AjW-xE-Yh1" secondAttribute="bottom" constant="-4" id="dqk-S3-LFm"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="xzW-VF-duZ" secondAttribute="bottom" id="fYg-zK-oD0"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AjW-xE-Yh1" secondAttribute="trailing" constant="10" id="xAP-oJ-wDz"/>
                 <constraint firstItem="xzW-VF-duZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zMa-iM-Kz6"/>
