@@ -24,7 +24,7 @@ extension ZLGameViewModel {
             
             //3.字典转模型
             for dict in dataArray {
-                self.games.append(ZLGameModel(dict: dict))
+                self.games.append(ZLGameModel(dict: dict as! [String : NSObject]))
             }
             
             //4.回调

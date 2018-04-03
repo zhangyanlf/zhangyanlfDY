@@ -22,7 +22,7 @@ private let zHeaderViewID = "zHeaderViewID"
 
 class ZLCommendViewController: UIViewController {
 
-    //懒加载我属性
+    //MARK: -  懒加载属性
     private lazy var commenViewModel: ZLCommenViewModel = ZLCommenViewModel()
     private lazy var collectionView: UICollectionView = { [weak self] in
         let layout = UICollectionViewFlowLayout()
@@ -74,7 +74,15 @@ extension ZLCommendViewController {
             //1.1展示推荐数据
             self.collectionView.reloadData()
             //1.2 将数据传给GameView
-            self.gameView.groups = self.commenViewModel.anchorGroups
+            var groups = self.commenViewModel.anchorGroups
+            groups.removeFirst()
+            groups.removeFirst()
+            //2.添加更多数据
+            let moreGroup = ZLAnchorGroup()
+            moreGroup.tag_name = "更多"
+            groups.append(moreGroup)
+            
+            self.gameView.groups = groups
         }
         //2.请求轮播数据
         commenViewModel.requestCycleDat {

@@ -18,6 +18,8 @@
 		A498C7E22072282D00AB0B62 /* ZLGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498C7E12072282D00AB0B62 /* ZLGameViewController.swift */; };
 		A49B6ABC207316CA002C6BE2 /* ZLGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B6ABB207316CA002C6BE2 /* ZLGameViewModel.swift */; };
 		A49B6ABE207322FB002C6BE2 /* ZLGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B6ABD207322FB002C6BE2 /* ZLGameModel.swift */; };
+		A49B6AC4207366C4002C6BE2 /* ZLAmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B6AC3207366C4002C6BE2 /* ZLAmuseViewController.swift */; };
+		A49B6AC620736F75002C6BE2 /* ZLAmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B6AC520736F75002C6BE2 /* ZLAmuseViewModel.swift */; };
 		A49E8B1A206C7EB500DFDB80 /* ZLCommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B19206C7EB500DFDB80 /* ZLCommendViewController.swift */; };
 		A49E8B1E206C899A00DFDB80 /* ZLCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A49E8B1C206C899A00DFDB80 /* ZLCollectionHeaderView.xib */; };
 		A49E8B21206C8DC700DFDB80 /* ZLCollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B1F206C8DC700DFDB80 /* ZLCollectionNormalCell.swift */; };
@@ -62,6 +64,8 @@
 		A498C7E12072282D00AB0B62 /* ZLGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLGameViewController.swift; sourceTree = "<group>"; };
 		A49B6ABB207316CA002C6BE2 /* ZLGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLGameViewModel.swift; sourceTree = "<group>"; };
 		A49B6ABD207322FB002C6BE2 /* ZLGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLGameModel.swift; sourceTree = "<group>"; };
+		A49B6AC3207366C4002C6BE2 /* ZLAmuseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLAmuseViewController.swift; sourceTree = "<group>"; };
+		A49B6AC520736F75002C6BE2 /* ZLAmuseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLAmuseViewModel.swift; sourceTree = "<group>"; };
 		A49E8B19206C7EB500DFDB80 /* ZLCommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCommendViewController.swift; sourceTree = "<group>"; };
 		A49E8B1B206C899A00DFDB80 /* ZLCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCollectionHeaderView.swift; sourceTree = "<group>"; };
 		A49E8B1C206C899A00DFDB80 /* ZLCollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLCollectionHeaderView.xib; sourceTree = "<group>"; };
@@ -239,6 +243,7 @@
 				A4B45669206A3DA400324451 /* HomeViewController.swift */,
 				A49E8B19206C7EB500DFDB80 /* ZLCommendViewController.swift */,
 				A498C7E12072282D00AB0B62 /* ZLGameViewController.swift */,
+				A49B6AC3207366C4002C6BE2 /* ZLAmuseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 			children = (
 				A4BF8CD4206CCD43007FCFFA /* ZLCommenViewModel.swift */,
 				A49B6ABB207316CA002C6BE2 /* ZLGameViewModel.swift */,
+				A49B6AC520736F75002C6BE2 /* ZLAmuseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -461,6 +467,7 @@
 				A4A321A4206E234000EC5227 /* ZLCollectionBaseCell.swift in Sources */,
 				A4D7283E206B29D60025E903 /* PageTitleView.swift in Sources */,
 				A498C7DF2072048900AB0B62 /* ZLCollectionGameCell.swift in Sources */,
+				A49B6AC620736F75002C6BE2 /* ZLAmuseViewModel.swift in Sources */,
 				A4D72842206B463D0025E903 /* PageContentView.swift in Sources */,
 				A4BF8CD5206CCD43007FCFFA /* ZLCommenViewModel.swift in Sources */,
 				A4B45622206A11E500324451 /* AppDelegate.swift in Sources */,
@@ -469,6 +476,7 @@
 				A498C7D22071C3D100AB0B62 /* ZLCycleModel.swift in Sources */,
 				A498C7E22072282D00AB0B62 /* ZLGameViewController.swift in Sources */,
 				A4BF8CD7206CD513007FCFFA /* NSData+Extension.swift in Sources */,
+				A49B6AC4207366C4002C6BE2 /* ZLAmuseViewController.swift in Sources */,
 				A4D72840206B2C010025E903 /* Common.swift in Sources */,
 				A49E8B28206CC00400DFDB80 /* ZLNetWorkTools.swift in Sources */,
 				A49E8B21206C8DC700DFDB80 /* ZLCollectionNormalCell.swift in Sources */,

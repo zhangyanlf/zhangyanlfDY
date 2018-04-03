@@ -27,7 +27,6 @@
                     <rect key="frame" x="10" y="21" width="18" height="18"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="1iS-OO-4Ld"/>
-                        <constraint firstAttribute="width" constant="18" id="RFe-w8-Ljy"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qc-Vv-ZIl">
@@ -65,9 +64,10 @@
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
             <connections>
                 <outlet property="iconImage" destination="fif-xf-Fq0" id="QLR-4m-tZq"/>
+                <outlet property="moreButton" destination="3qc-Vv-ZIl" id="7DT-kw-bb0"/>
                 <outlet property="titleLabel" destination="1Tz-rv-GWO" id="xuv-Gi-U3U"/>
             </connections>
-            <point key="canvasLocation" x="205" y="-66"/>
+            <point key="canvasLocation" x="-57" y="-70"/>
         </collectionReusableView>
     </objects>
     <resources>

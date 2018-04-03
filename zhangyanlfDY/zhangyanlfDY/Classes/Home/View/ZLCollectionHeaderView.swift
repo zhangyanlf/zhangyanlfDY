@@ -17,6 +17,8 @@ class ZLCollectionHeaderView: UICollectionReusableView {
     /// 标题图片
     @IBOutlet weak var iconImage: UIImageView!
     
+    /// 更多按钮
+    @IBOutlet weak var moreButton: UIButton!
     //定义模型属性
     var group : ZLAnchorGroup? {
         didSet {
@@ -24,6 +26,14 @@ class ZLCollectionHeaderView: UICollectionReusableView {
             iconImage.image = UIImage(named: group?.icon_name ?? "home_header_normal")
         }
     }
-    
-    
 }
+
+//MARK: - 从Xib中快速创建的类方法
+extension ZLCollectionHeaderView {
+    class func colectionHeaderView () -> ZLCollectionHeaderView {
+        return Bundle.main.loadNibNamed("ZLCollectionHeaderView", owner: nil, options: nil)?.first as! ZLCollectionHeaderView
+    }
+}
+
+
+

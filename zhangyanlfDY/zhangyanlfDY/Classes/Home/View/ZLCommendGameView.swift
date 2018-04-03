@@ -10,24 +10,30 @@ import UIKit
 
 private let zGameCellID = "zGameCellID"
 private let zEdgrInsetMargin : CGFloat = 10
+private var allgroup : [Any]?
+private let count: Int = 10
+
 
 class ZLCommendGameView: UIView {
     
     //MARK: - 定义数据的属性
     var groups : [ZLAnchorGroup]? {
         didSet {
-            //1.删除前两个数据
-            groups?.removeFirst()
-            groups?.removeFirst()
-            //2.添加更多数据
-            let moreGroup = ZLAnchorGroup()
-            moreGroup.tag_name = "更多"
-            groups?.append(moreGroup)
-            
+            allgroup = groups
             //3.加载游戏数据
             gameCollectionView.reloadData()
         }
     }
+    
+    var gameGroups : [ZLGameModel]? {
+        didSet {
+            allgroup = gameGroups
+            //3.加载游戏数据
+            gameCollectionView.reloadData()
+        }
+    }
+    
+   
     
     
     ///MARK: - 控件属性
@@ -60,13 +66,20 @@ extension ZLCommendGameView {
 extension ZLCommendGameView : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return groups?.count ?? 0
+        return allgroup?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = gameCollectionView.dequeueReusableCell(withReuseIdentifier: zGameCellID, for: indexPath) as! ZLCollectionGameCell
-        cell.group = groups![indexPath.item]
+        
+        //FIXME: 由于接口变化，字段不同  只能分模型设置cell的展示（这里判断count只是刚好一个11 一个10，逻辑不是很严谨）
+        if (allgroup?.count)! > count {
+            cell.group = allgroup![indexPath.item] as? ZLAnchorGroup
+        } else {
+            cell.gameModel = allgroup![indexPath.item] as? ZLGameModel
+        }
+        
         
         return cell
         
