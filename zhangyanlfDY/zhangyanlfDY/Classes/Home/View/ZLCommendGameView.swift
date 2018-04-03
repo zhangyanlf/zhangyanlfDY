@@ -39,7 +39,6 @@ class ZLCommendGameView: UIView {
         autoresizingMask = UIViewAutoresizing()
         
         //注册Cell
-        
         gameCollectionView.register(UINib(nibName: "ZLCollectionGameCell", bundle: nil), forCellWithReuseIdentifier: zGameCellID)
         
         //添加内边距

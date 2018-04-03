@@ -15,6 +15,9 @@
 		A498C7DC2071F97200AB0B62 /* ZLCommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A498C7DB2071F97200AB0B62 /* ZLCommendGameView.xib */; };
 		A498C7DF2072048900AB0B62 /* ZLCollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498C7DD2072048900AB0B62 /* ZLCollectionGameCell.swift */; };
 		A498C7E02072048900AB0B62 /* ZLCollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A498C7DE2072048900AB0B62 /* ZLCollectionGameCell.xib */; };
+		A498C7E22072282D00AB0B62 /* ZLGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498C7E12072282D00AB0B62 /* ZLGameViewController.swift */; };
+		A49B6ABC207316CA002C6BE2 /* ZLGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B6ABB207316CA002C6BE2 /* ZLGameViewModel.swift */; };
+		A49B6ABE207322FB002C6BE2 /* ZLGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B6ABD207322FB002C6BE2 /* ZLGameModel.swift */; };
 		A49E8B1A206C7EB500DFDB80 /* ZLCommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B19206C7EB500DFDB80 /* ZLCommendViewController.swift */; };
 		A49E8B1E206C899A00DFDB80 /* ZLCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A49E8B1C206C899A00DFDB80 /* ZLCollectionHeaderView.xib */; };
 		A49E8B21206C8DC700DFDB80 /* ZLCollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E8B1F206C8DC700DFDB80 /* ZLCollectionNormalCell.swift */; };
@@ -56,6 +59,9 @@
 		A498C7DB2071F97200AB0B62 /* ZLCommendGameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLCommendGameView.xib; sourceTree = "<group>"; };
 		A498C7DD2072048900AB0B62 /* ZLCollectionGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCollectionGameCell.swift; sourceTree = "<group>"; };
 		A498C7DE2072048900AB0B62 /* ZLCollectionGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLCollectionGameCell.xib; sourceTree = "<group>"; };
+		A498C7E12072282D00AB0B62 /* ZLGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLGameViewController.swift; sourceTree = "<group>"; };
+		A49B6ABB207316CA002C6BE2 /* ZLGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLGameViewModel.swift; sourceTree = "<group>"; };
+		A49B6ABD207322FB002C6BE2 /* ZLGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLGameModel.swift; sourceTree = "<group>"; };
 		A49E8B19206C7EB500DFDB80 /* ZLCommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCommendViewController.swift; sourceTree = "<group>"; };
 		A49E8B1B206C899A00DFDB80 /* ZLCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCollectionHeaderView.swift; sourceTree = "<group>"; };
 		A49E8B1C206C899A00DFDB80 /* ZLCollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLCollectionHeaderView.xib; sourceTree = "<group>"; };
@@ -232,6 +238,7 @@
 			children = (
 				A4B45669206A3DA400324451 /* HomeViewController.swift */,
 				A49E8B19206C7EB500DFDB80 /* ZLCommendViewController.swift */,
+				A498C7E12072282D00AB0B62 /* ZLGameViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -240,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				A498C7D12071C3D100AB0B62 /* ZLCycleModel.swift */,
+				A49B6ABD207322FB002C6BE2 /* ZLGameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				A4BF8CD4206CCD43007FCFFA /* ZLCommenViewModel.swift */,
+				A49B6ABB207316CA002C6BE2 /* ZLGameViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -456,7 +465,9 @@
 				A4BF8CD5206CCD43007FCFFA /* ZLCommenViewModel.swift in Sources */,
 				A4B45622206A11E500324451 /* AppDelegate.swift in Sources */,
 				A4B4566A206A3DA400324451 /* HomeViewController.swift in Sources */,
+				A49B6ABC207316CA002C6BE2 /* ZLGameViewModel.swift in Sources */,
 				A498C7D22071C3D100AB0B62 /* ZLCycleModel.swift in Sources */,
+				A498C7E22072282D00AB0B62 /* ZLGameViewController.swift in Sources */,
 				A4BF8CD7206CD513007FCFFA /* NSData+Extension.swift in Sources */,
 				A4D72840206B2C010025E903 /* Common.swift in Sources */,
 				A49E8B28206CC00400DFDB80 /* ZLNetWorkTools.swift in Sources */,
@@ -466,6 +477,7 @@
 				A4B4566D206A43D100324451 /* UIBarbuttonItem+Extension.swift in Sources */,
 				A4A321AC206E2D3800EC5227 /* ZLRecommendCycleView.swift in Sources */,
 				A49E8B25206CB05700DFDB80 /* ZLCollectionPrettyCell.swift in Sources */,
+				A49B6ABE207322FB002C6BE2 /* ZLGameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

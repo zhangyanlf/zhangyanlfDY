@@ -20,6 +20,15 @@ class ZLCollectionGameCell: UICollectionViewCell {
             
         }
     }
+    
+    var gameModel : ZLGameModel? {
+        didSet {
+            gamaTitleLabel.text = gameModel?.game_name
+            let gameURL = URL(string: gameModel?.game_icon ?? "")
+            gamaImageView.kf.setImage(with: gameURL, placeholder: #imageLiteral(resourceName: "home_more_btn"))
+        }
+    }
+    
     //MARK: - 控件属性
     /// 游戏图片
     @IBOutlet weak var gamaImageView: UIImageView!

@@ -17,7 +17,7 @@ enum MethodType {
 
 class ZLNetWorkTools{
  
-   class func requestDate(type: MethodType, urlString: String,paramters :[String: Any]? = nil,finishedCallback:@escaping (_ result: AnyObject)->()) {
+   class func requestDate(type: MethodType, urlString: String,paramters :[String: Any]? = nil,finishedCallback:@escaping (_ result: Any)->()) {
         
         //1.自定义类型
         let method = type == .GET ? HTTPMethod.get : HTTPMethod.post
@@ -29,7 +29,7 @@ class ZLNetWorkTools{
                 return
             }
             //4.将结果回调
-            finishedCallback(result as AnyObject)
+            finishedCallback(result)
         }
     
     
