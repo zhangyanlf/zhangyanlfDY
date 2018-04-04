@@ -11,6 +11,9 @@
 		A409BCA62073782C008BF9DC /* ZLBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409BCA52073782C008BF9DC /* ZLBaseViewModel.swift */; };
 		A409BCA820737AF8008BF9DC /* ZLBaseAnchorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409BCA720737AF8008BF9DC /* ZLBaseAnchorController.swift */; };
 		A42E6C412074B3B1000FAB91 /* ZLBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E6C402074B3B1000FAB91 /* ZLBaseViewController.swift */; };
+		A42E6C472074C52B000FAB91 /* ZLRoomShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E6C462074C52B000FAB91 /* ZLRoomShowViewController.swift */; };
+		A42E6C492074C56D000FAB91 /* ZLRoomNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E6C482074C56D000FAB91 /* ZLRoomNormalViewController.swift */; };
+		A42E6C4B2074C848000FAB91 /* ZLCustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E6C4A2074C848000FAB91 /* ZLCustomNavigationController.swift */; };
 		A498C7D22071C3D100AB0B62 /* ZLCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498C7D12071C3D100AB0B62 /* ZLCycleModel.swift */; };
 		A498C7D52071CCD000AB0B62 /* ZLCollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498C7D32071CCD000AB0B62 /* ZLCollectionCycleCell.swift */; };
 		A498C7D62071CCD000AB0B62 /* ZLCollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A498C7D42071CCD000AB0B62 /* ZLCollectionCycleCell.xib */; };
@@ -66,6 +69,9 @@
 		A409BCA52073782C008BF9DC /* ZLBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLBaseViewModel.swift; sourceTree = "<group>"; };
 		A409BCA720737AF8008BF9DC /* ZLBaseAnchorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLBaseAnchorController.swift; sourceTree = "<group>"; };
 		A42E6C402074B3B1000FAB91 /* ZLBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLBaseViewController.swift; sourceTree = "<group>"; };
+		A42E6C462074C52B000FAB91 /* ZLRoomShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLRoomShowViewController.swift; sourceTree = "<group>"; };
+		A42E6C482074C56D000FAB91 /* ZLRoomNormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLRoomNormalViewController.swift; sourceTree = "<group>"; };
+		A42E6C4A2074C848000FAB91 /* ZLCustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCustomNavigationController.swift; sourceTree = "<group>"; };
 		A498C7D12071C3D100AB0B62 /* ZLCycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCycleModel.swift; sourceTree = "<group>"; };
 		A498C7D32071CCD000AB0B62 /* ZLCollectionCycleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCollectionCycleCell.swift; sourceTree = "<group>"; };
 		A498C7D42071CCD000AB0B62 /* ZLCollectionCycleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLCollectionCycleCell.xib; sourceTree = "<group>"; };
@@ -146,6 +152,39 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		A42E6C422074C4F8000FAB91 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				A42E6C442074C4F8000FAB91 /* Model */,
+				A42E6C452074C4F8000FAB91 /* View */,
+				A42E6C432074C4F8000FAB91 /* Controller */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		A42E6C432074C4F8000FAB91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A42E6C462074C52B000FAB91 /* ZLRoomShowViewController.swift */,
+				A42E6C482074C56D000FAB91 /* ZLRoomNormalViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A42E6C442074C4F8000FAB91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A42E6C452074C4F8000FAB91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A4B45615206A11E500324451 = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				A4B45639206A239100324451 /* Main */,
+				A42E6C422074C4F8000FAB91 /* Room */,
 				A4B45634206A239100324451 /* Home */,
 				A4B45638206A239100324451 /* Live */,
 				A4B45636206A239100324451 /* Concern */,
@@ -308,6 +348,7 @@
 			children = (
 				A42E6C402074B3B1000FAB91 /* ZLBaseViewController.swift */,
 				A409BCA720737AF8008BF9DC /* ZLBaseAnchorController.swift */,
+				A42E6C4A2074C848000FAB91 /* ZLCustomNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -508,11 +549,14 @@
 				A49B6AC620736F75002C6BE2 /* ZLAmuseViewModel.swift in Sources */,
 				A4D72842206B463D0025E903 /* PageContentView.swift in Sources */,
 				A4B2A4B8207499F5008E4F19 /* ZLFunnyViewController.swift in Sources */,
+				A42E6C4B2074C848000FAB91 /* ZLCustomNavigationController.swift in Sources */,
 				A4BF8CD5206CCD43007FCFFA /* ZLCommenViewModel.swift in Sources */,
 				A4B45622206A11E500324451 /* AppDelegate.swift in Sources */,
 				A4B4566A206A3DA400324451 /* HomeViewController.swift in Sources */,
 				A409BCA820737AF8008BF9DC /* ZLBaseAnchorController.swift in Sources */,
+				A42E6C492074C56D000FAB91 /* ZLRoomNormalViewController.swift in Sources */,
 				A49B6ABC207316CA002C6BE2 /* ZLGameViewModel.swift in Sources */,
+				A42E6C472074C52B000FAB91 /* ZLRoomShowViewController.swift in Sources */,
 				A4B2A4BA20749EDA008E4F19 /* ZLFunnyviewModel.swift in Sources */,
 				A498C7D22071C3D100AB0B62 /* ZLCycleModel.swift in Sources */,
 				A498C7E22072282D00AB0B62 /* ZLGameViewController.swift in Sources */,

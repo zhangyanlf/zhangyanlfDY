@@ -73,7 +73,7 @@ extension ZLBaseAnchorController {
     }
 }
 //MARK: - 遵守代理 UICollectionViewDataSource,UICollectionViewDelegate
-extension ZLBaseAnchorController : UICollectionViewDataSource,UICollectionViewDelegate {
+extension ZLBaseAnchorController : UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return baseVM.anchorGroups.count
@@ -103,4 +103,32 @@ extension ZLBaseAnchorController : UICollectionViewDataSource,UICollectionViewDe
     
 }
 
+//MARK: - UICollectionViewDelegate
+extension ZLBaseAnchorController : UICollectionViewDelegate {
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //1.取出对应的主播信息
+        let anchor = baseVM.anchorGroups[indexPath.section].anchors[indexPath.item]
+        //2.判断是秀场还是普通
+        anchor.isVertical == 0 ? pushNormalRoomVc() : presentShowRoomVc()
+        
+    }
+    
+    private func presentShowRoomVc(){
+        //1.创建showRoomVC
+        let showRoomVC = ZLRoomShowViewController()
+        
+        //2.以modal模式推出
+        present(showRoomVC, animated: true, completion: nil)
+        
+    }
+    
+    private func pushNormalRoomVc() {
+        //1.创建normalRoomVc
+        let normalRoomVc = ZLRoomNormalViewController()
+        //2.以push模式推出
+        navigationController?.pushViewController(normalRoomVc, animated: true)
+        
+    }
+    
+}

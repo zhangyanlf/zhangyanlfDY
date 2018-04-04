@@ -98,6 +98,7 @@ extension HomeViewController {
 //MARK: - 遵守PageTitleViewDelegate
 extension HomeViewController: PageTitleViewDelegate {
     func pageTitleView(titleView: PageTitleView, selectedIndex index: Int) {
+        print("HomeViewController")
         print(index)
         pageContentView.setCurrentIndex(currentIndex: index)
     }
