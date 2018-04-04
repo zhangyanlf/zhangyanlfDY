@@ -34,7 +34,11 @@ extension ZLFunnyViewController {
         
         //2.请求数据
         zlFunnyVM.loadFunnyData {
+            //2.1刷新表格
             self.collectionView.reloadData()
+            
+            //2.2数据加载完成
+            self.loadDataFinished()
         }
     }
 }

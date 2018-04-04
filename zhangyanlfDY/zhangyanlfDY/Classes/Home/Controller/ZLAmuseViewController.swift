@@ -41,11 +41,17 @@ extension ZLAmuseViewController {
         baseVM = zlAmuseVM
         //2.请求数据
         zlAmuseVM.loadAmuseData {
+            //1.刷新表格
             self.collectionView.reloadData()
+            
+            //2.调整数据
             var tempGroups = self.zlAmuseVM.anchorGroups
             tempGroups.removeFirst()
             
             self.zlAumseMenuView.groups = tempGroups
+            
+            //3.数据加载完成
+            self.loadDataFinished()
         }
     }
 }

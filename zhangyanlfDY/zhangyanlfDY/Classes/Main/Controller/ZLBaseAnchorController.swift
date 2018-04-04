@@ -18,7 +18,7 @@ private let zNormalCellID = "zNormalCellID"
 let zPrettyCellID = "zPrettyCellID"
 private let zHeaderViewID = "zHeaderViewID"
 
-class ZLBaseAnchorController: UIViewController {
+class ZLBaseAnchorController: ZLBaseViewController {
 
         //MARK: - 定义属性
         var baseVM : ZLBaseViewModel!
@@ -62,8 +62,14 @@ extension ZLBaseAnchorController {
 }
 //MARK: - 设置UI界面
 extension ZLBaseAnchorController {
-     @objc func setupUI() {
+     override func setupUI() {
+        //1.给父类中的View引用进行赋值
+        contentView = collectionView
+        //2.添加 collectionView
         view.addSubview(collectionView)
+        //3.调用super.setupUI()
+        super.setupUI()
+        
     }
 }
 //MARK: - 遵守代理 UICollectionViewDataSource,UICollectionViewDelegate
