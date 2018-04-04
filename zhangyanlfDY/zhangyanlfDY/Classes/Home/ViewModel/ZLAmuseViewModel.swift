@@ -16,6 +16,6 @@ class ZLAmuseViewModel : ZLBaseViewModel {
 
 extension ZLAmuseViewModel {
     func loadAmuseData(finishedCallBack:@escaping () -> ()) {
-        loadAnchorData(urlString: "http://capi.douyucdn.cn/api/v1/getHotRoom/2", finishedCallback: finishedCallBack)
+        loadAnchorData(isGroupData: true, urlString: "http://capi.douyucdn.cn/api/v1/getHotRoom/2", finishedCallback: finishedCallBack)
     }
 }

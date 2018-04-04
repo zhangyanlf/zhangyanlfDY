@@ -74,7 +74,7 @@ extension ZLCommenViewModel {
         print(Date.getCurrentTime())
         //http://capi.douyucdn.cn/api/v1/getHotCate?limit=4&offset=0&time=1522371234
         
-        loadAnchorData(urlString: "http://capi.douyucdn.cn/api/v1/getHotCate", paramters: parameters) {
+        loadAnchorData(isGroupData: true, urlString: "http://capi.douyucdn.cn/api/v1/getHotCate", paramters: parameters) {
             //离开组
             disGroup.leave()
         }

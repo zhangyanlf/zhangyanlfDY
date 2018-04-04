@@ -37,6 +37,8 @@
 		A4B2A4B220746811008E4F19 /* ZLAmuseMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4B2A4B120746811008E4F19 /* ZLAmuseMenuView.xib */; };
 		A4B2A4B52074728B008E4F19 /* ZLAmusemenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B2A4B32074728B008E4F19 /* ZLAmusemenuCell.swift */; };
 		A4B2A4B62074728B008E4F19 /* ZLAmusemenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4B2A4B42074728B008E4F19 /* ZLAmusemenuCell.xib */; };
+		A4B2A4B8207499F5008E4F19 /* ZLFunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B2A4B7207499F5008E4F19 /* ZLFunnyViewController.swift */; };
+		A4B2A4BA20749EDA008E4F19 /* ZLFunnyviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B2A4B920749EDA008E4F19 /* ZLFunnyviewModel.swift */; };
 		A4B45622206A11E500324451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B45621206A11E500324451 /* AppDelegate.swift */; };
 		A4B45629206A11E500324451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B45628206A11E500324451 /* Assets.xcassets */; };
 		A4B4562C206A11E500324451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B4562A206A11E500324451 /* LaunchScreen.storyboard */; };
@@ -89,6 +91,8 @@
 		A4B2A4B120746811008E4F19 /* ZLAmuseMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLAmuseMenuView.xib; sourceTree = "<group>"; };
 		A4B2A4B32074728B008E4F19 /* ZLAmusemenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLAmusemenuCell.swift; sourceTree = "<group>"; };
 		A4B2A4B42074728B008E4F19 /* ZLAmusemenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLAmusemenuCell.xib; sourceTree = "<group>"; };
+		A4B2A4B7207499F5008E4F19 /* ZLFunnyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLFunnyViewController.swift; sourceTree = "<group>"; };
+		A4B2A4B920749EDA008E4F19 /* ZLFunnyviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLFunnyviewModel.swift; sourceTree = "<group>"; };
 		A4B4561E206A11E500324451 /* zhangyanlfDY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhangyanlfDY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B45621206A11E500324451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4B45628206A11E500324451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -269,6 +273,7 @@
 				A49E8B19206C7EB500DFDB80 /* ZLCommendViewController.swift */,
 				A498C7E12072282D00AB0B62 /* ZLGameViewController.swift */,
 				A49B6AC3207366C4002C6BE2 /* ZLAmuseViewController.swift */,
+				A4B2A4B7207499F5008E4F19 /* ZLFunnyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 				A4BF8CD4206CCD43007FCFFA /* ZLCommenViewModel.swift */,
 				A49B6ABB207316CA002C6BE2 /* ZLGameViewModel.swift */,
 				A49B6AC520736F75002C6BE2 /* ZLAmuseViewModel.swift */,
+				A4B2A4B920749EDA008E4F19 /* ZLFunnyviewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -498,11 +504,13 @@
 				A498C7DF2072048900AB0B62 /* ZLCollectionGameCell.swift in Sources */,
 				A49B6AC620736F75002C6BE2 /* ZLAmuseViewModel.swift in Sources */,
 				A4D72842206B463D0025E903 /* PageContentView.swift in Sources */,
+				A4B2A4B8207499F5008E4F19 /* ZLFunnyViewController.swift in Sources */,
 				A4BF8CD5206CCD43007FCFFA /* ZLCommenViewModel.swift in Sources */,
 				A4B45622206A11E500324451 /* AppDelegate.swift in Sources */,
 				A4B4566A206A3DA400324451 /* HomeViewController.swift in Sources */,
 				A409BCA820737AF8008BF9DC /* ZLBaseAnchorController.swift in Sources */,
 				A49B6ABC207316CA002C6BE2 /* ZLGameViewModel.swift in Sources */,
+				A4B2A4BA20749EDA008E4F19 /* ZLFunnyviewModel.swift in Sources */,
 				A498C7D22071C3D100AB0B62 /* ZLCycleModel.swift in Sources */,
 				A498C7E22072282D00AB0B62 /* ZLGameViewController.swift in Sources */,
 				A4BF8CD7206CD513007FCFFA /* NSData+Extension.swift in Sources */,
