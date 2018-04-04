@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8BD550EE63256D3A65C28CDE /* Pods_zhangyanlfDY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E3FBA58F66EAA93F6483CB /* Pods_zhangyanlfDY.framework */; };
+		A409BCA62073782C008BF9DC /* ZLBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409BCA52073782C008BF9DC /* ZLBaseViewModel.swift */; };
+		A409BCA820737AF8008BF9DC /* ZLBaseAnchorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409BCA720737AF8008BF9DC /* ZLBaseAnchorController.swift */; };
 		A498C7D22071C3D100AB0B62 /* ZLCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498C7D12071C3D100AB0B62 /* ZLCycleModel.swift */; };
 		A498C7D52071CCD000AB0B62 /* ZLCollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498C7D32071CCD000AB0B62 /* ZLCollectionCycleCell.swift */; };
 		A498C7D62071CCD000AB0B62 /* ZLCollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A498C7D42071CCD000AB0B62 /* ZLCollectionCycleCell.xib */; };
@@ -54,6 +56,8 @@
 /* Begin PBXFileReference section */
 		13106732AB8A74D35F4974A7 /* Pods-zhangyanlfDY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhangyanlfDY.release.xcconfig"; path = "Pods/Target Support Files/Pods-zhangyanlfDY/Pods-zhangyanlfDY.release.xcconfig"; sourceTree = "<group>"; };
 		5E1C09CB8A0E87E8ADB157E0 /* Pods-zhangyanlfDY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhangyanlfDY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zhangyanlfDY/Pods-zhangyanlfDY.debug.xcconfig"; sourceTree = "<group>"; };
+		A409BCA52073782C008BF9DC /* ZLBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLBaseViewModel.swift; sourceTree = "<group>"; };
+		A409BCA720737AF8008BF9DC /* ZLBaseAnchorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLBaseAnchorController.swift; sourceTree = "<group>"; };
 		A498C7D12071C3D100AB0B62 /* ZLCycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCycleModel.swift; sourceTree = "<group>"; };
 		A498C7D32071CCD000AB0B62 /* ZLCollectionCycleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCollectionCycleCell.swift; sourceTree = "<group>"; };
 		A498C7D42071CCD000AB0B62 /* ZLCollectionCycleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZLCollectionCycleCell.xib; sourceTree = "<group>"; };
@@ -118,6 +122,14 @@
 				C7E3FBA58F66EAA93F6483CB /* Pods_zhangyanlfDY.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A409BCA4207377F8008BF9DC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A409BCA52073782C008BF9DC /* ZLBaseViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A4B45615206A11E500324451 = {
@@ -210,6 +222,7 @@
 			children = (
 				A4B45668206A3D4800324451 /* Model */,
 				A4B45666206A3D4800324451 /* View */,
+				A409BCA4207377F8008BF9DC /* ViewModel */,
 				A4B45667206A3D4800324451 /* Controller */,
 				A4B45649206A31CB00324451 /* Main.storyboard */,
 				A4B45657206A345200324451 /* Home.storyboard */,
@@ -274,6 +287,7 @@
 		A4B45667206A3D4800324451 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A409BCA720737AF8008BF9DC /* ZLBaseAnchorController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -472,10 +486,12 @@
 				A4BF8CD5206CCD43007FCFFA /* ZLCommenViewModel.swift in Sources */,
 				A4B45622206A11E500324451 /* AppDelegate.swift in Sources */,
 				A4B4566A206A3DA400324451 /* HomeViewController.swift in Sources */,
+				A409BCA820737AF8008BF9DC /* ZLBaseAnchorController.swift in Sources */,
 				A49B6ABC207316CA002C6BE2 /* ZLGameViewModel.swift in Sources */,
 				A498C7D22071C3D100AB0B62 /* ZLCycleModel.swift in Sources */,
 				A498C7E22072282D00AB0B62 /* ZLGameViewController.swift in Sources */,
 				A4BF8CD7206CD513007FCFFA /* NSData+Extension.swift in Sources */,
+				A409BCA62073782C008BF9DC /* ZLBaseViewModel.swift in Sources */,
 				A49B6AC4207366C4002C6BE2 /* ZLAmuseViewController.swift in Sources */,
 				A4D72840206B2C010025E903 /* Common.swift in Sources */,
 				A49E8B28206CC00400DFDB80 /* ZLNetWorkTools.swift in Sources */,

@@ -9,9 +9,8 @@
 import UIKit
 import Foundation
 
-class ZLCommenViewModel {
+class ZLCommenViewModel : ZLBaseViewModel{
     //MARK: - 懒加载数组
-    lazy var anchorGroups: [ZLAnchorGroup] = [ZLAnchorGroup]()
     lazy var cycleModels: [ZLCycleModel] = [ZLCycleModel]()
     private lazy var bigDataGroup: ZLAnchorGroup = ZLAnchorGroup()
     private lazy var prettyGroup: ZLAnchorGroup = ZLAnchorGroup()
@@ -74,25 +73,12 @@ extension ZLCommenViewModel {
         disGroup.enter()
         print(Date.getCurrentTime())
         //http://capi.douyucdn.cn/api/v1/getHotCate?limit=4&offset=0&time=1522371234
-        // 1).定义参数
         
-        ZLNetWorkTools.requestDate(type: .GET, urlString: "http://capi.douyucdn.cn/api/v1/getHotCate", paramters: parameters) { (result) in
-            
-           
-            // 1.获取整体字典数据
-            guard let resultDict = result as? [String : NSObject] else { return }
-            
-            // 2.根据data的key获取数据
-            guard let dataArray = resultDict["data"] as? [[String : NSObject]] else { return }
-            
-            //3.遍历数组 获取字典 并且将字典转为模型对象
-            for dict in dataArray {
-                let group = ZLAnchorGroup(dict: dict)
-                self.anchorGroups.append(group)
-            }
-            //4.离开组
+        loadAnchorData(urlString: "http://capi.douyucdn.cn/api/v1/getHotCate", paramters: parameters) {
+            //离开组
             disGroup.leave()
         }
+       
         
         //6.所有的数据都请求到 之后进行排序
         disGroup.notify(queue: DispatchQueue.main) {

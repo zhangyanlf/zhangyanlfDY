@@ -8,100 +8,54 @@
 
 import UIKit
 
-private let zItemmargin: CGFloat = 10
-private let zItemW: CGFloat = (zScreenW - 3 * zItemmargin) / 2
-private let zNormalItemH: CGFloat = zItemW * 3 / 4
-private let zPrettyItemH: CGFloat = zItemW * 4 / 3
-private let zHeaderViewH: CGFloat = 50
 
-private let zNormalCellID = "zNormalCellID"
-private let zPrettyCellID = "zPrettyCellID"
-private let zHeaderViewID = "zHeaderViewID"
 
-class ZLAmuseViewController: UIViewController {
+class ZLAmuseViewController: ZLBaseAnchorController {
     
     //MARK: -  懒加载属性
     fileprivate lazy var zlAmuseVM : ZLAmuseViewModel = ZLAmuseViewModel()
-    private lazy var collectionView: UICollectionView = { [weak self] in
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: zItemW, height: zNormalItemH)
-        layout.minimumLineSpacing = 0
-        layout.minimumInteritemSpacing = zItemmargin
-        layout.headerReferenceSize = CGSize(width: zScreenW, height: zHeaderViewH)
-        layout.sectionInset = UIEdgeInsets(top: 0, left: zItemmargin, bottom: 0, right: zItemmargin)
-        let collectionView = UICollectionView(frame: (self?.view.bounds)!, collectionViewLayout: layout)
-        collectionView.backgroundColor = UIColor.white
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        collectionView.register(UINib(nibName:"ZLCollectionNormalCell", bundle: nil), forCellWithReuseIdentifier: zNormalCellID)
-        collectionView.register(UINib(nibName:"ZLCollectionPrettyCell", bundle: nil), forCellWithReuseIdentifier: zPrettyCellID)
-        collectionView.register(UINib(nibName: "ZLCollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: zHeaderViewID)
-        return collectionView
-        
-        
-        }()
-    
-    //MARK: - 系统回调
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        view.backgroundColor = UIColor.red
-        //设置UI界面
-        setupUI()
-        //发送网络请求
-        loadData()
-    }
 
 }
 
-//MARK: - 发送网络请求
 extension ZLAmuseViewController {
-    fileprivate func loadData(){
+    override func loadData() {
+        //1.给父类中的baseVM赋值
+        baseVM = zlAmuseVM
+        
         zlAmuseVM.loadAmuseData {
             self.collectionView.reloadData()
         }
     }
 }
 
-//MARK: - 设置UI界面
-extension ZLAmuseViewController {
-    private func setupUI() {
-        view.addSubview(collectionView)
-    }
-}
-
-
-//MARK: - 遵守代理 UICollectionViewDataSource,UICollectionViewDelegate
-extension ZLAmuseViewController : UICollectionViewDataSource,UICollectionViewDelegate {
+//MARK: - 子类实现方法
+extension ZLAmuseViewController : UICollectionViewDelegateFlowLayout {
     
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return zlAmuseVM.anchorGroup.count
-    }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return zlAmuseVM.anchorGroup[section].anchors.count
-    }
-    
-   
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //1.取出cell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: zNormalCellID, for: indexPath) as! ZLCollectionNormalCell
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        cell.anchor = zlAmuseVM.anchorGroup[indexPath.section].anchors[indexPath.item]
-        return cell
+        
+        if indexPath.section == (zlAmuseVM.anchorGroups.count - 1) {
+            //1.取出cell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: zPrettyCellID, for: indexPath) as! ZLCollectionPrettyCell
+            //2.赋值
+            cell.anchor = zlAmuseVM.anchorGroups[indexPath.section].anchors[indexPath.item]
+            return cell
+            
+        } else {
+            return super.collectionView(collectionView, cellForItemAt: indexPath)
+        }
     }
     
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        //1.取出headerView
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: zHeaderViewID, for: indexPath) as! ZLCollectionHeaderView
-        headerView.group = zlAmuseVM.anchorGroup[indexPath.section]
-        return headerView
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if indexPath.section == (zlAmuseVM.anchorGroups.count - 1) {
+            return CGSize(width: zItemW, height: zPrettyItemH)
+        } else {
+            return CGSize(width: zItemW, height: zNormalItemH)
+        }
     }
-    
-    
 }
+
+
 
 
 

@@ -9,8 +9,8 @@
 import UIKit
 
 private let zEndgeMargin: CGFloat = 10
-private let zItemW: CGFloat = (zScreenW - 2 * zEndgeMargin) / 3
-private let zItemH: CGFloat = zItemW * 6 / 5
+private let zGameItemW: CGFloat = (zScreenW - 2 * zEndgeMargin) / 3
+private let zGameItemH: CGFloat = zItemW * 6 / 5
 private let zGameCellID = "zGameCellID"
 private let zGameHeaderID = "zGameHeaderID"
 private let zHeaderH: CGFloat = 50
@@ -39,7 +39,7 @@ class ZLGameViewController: UIViewController {
     fileprivate lazy var collactionView : UICollectionView = {[unowned self] in
         //1.创建布局
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: zItemW, height: zItemH)
+        layout.itemSize = CGSize(width: zGameItemW, height: zGameItemH)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
         layout.sectionInset = UIEdgeInsets(top: 0, left: zEndgeMargin, bottom: 0, right: zEndgeMargin)
