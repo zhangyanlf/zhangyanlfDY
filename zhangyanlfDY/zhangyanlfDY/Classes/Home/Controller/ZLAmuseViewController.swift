@@ -8,22 +8,44 @@
 
 import UIKit
 
-
+private let zMenuViewH: CGFloat = 200
 
 class ZLAmuseViewController: ZLBaseAnchorController {
     
     //MARK: -  懒加载属性
     fileprivate lazy var zlAmuseVM : ZLAmuseViewModel = ZLAmuseViewModel()
+    fileprivate lazy var zlAumseMenuView : ZLAmuseMenuView = {
+        let zlAumseMenuView = ZLAmuseMenuView.zlAmuseMenuView()
+        zlAumseMenuView.frame = CGRect(x: 0, y: -zMenuViewH, width: zScreenW, height: zMenuViewH)
+
+        
+        return zlAumseMenuView
+    }()
 
 }
 
+//MARK: - 设置UI界面
+extension ZLAmuseViewController {
+    override func setupUI() {
+        super.setupUI()
+        //2.将菜单的View添加到collectionView中
+        collectionView.addSubview(zlAumseMenuView)
+        collectionView.contentInset = UIEdgeInsets(top: zMenuViewH, left: 0, bottom: 0, right: 0)
+    }
+}
+
+//MARK: - 加载数据
 extension ZLAmuseViewController {
     override func loadData() {
         //1.给父类中的baseVM赋值
         baseVM = zlAmuseVM
-        
+        //2.请求数据
         zlAmuseVM.loadAmuseData {
             self.collectionView.reloadData()
+            var tempGroups = self.zlAmuseVM.anchorGroups
+            tempGroups.removeFirst()
+            
+            self.zlAumseMenuView.groups = tempGroups
         }
     }
 }
