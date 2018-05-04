@@ -14,12 +14,10 @@ class ZLRoomNormalViewController: UIViewController,UIGestureRecognizerDelegate {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.orange
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
     
 
     override func viewWillAppear(_ animated: Bool) {
@@ -28,8 +26,8 @@ class ZLRoomNormalViewController: UIViewController,UIGestureRecognizerDelegate {
         navigationController?.setNavigationBarHidden(true, animated: false)
         
         //依然保持手势
-        navigationController?.interactivePopGestureRecognizer?.delegate = self
-        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+//        navigationController?.interactivePopGestureRecognizer?.delegate = self
+//        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {

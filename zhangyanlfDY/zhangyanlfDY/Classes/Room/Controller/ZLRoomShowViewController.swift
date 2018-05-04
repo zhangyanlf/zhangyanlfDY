@@ -12,7 +12,7 @@ class ZLRoomShowViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.purple
+        view.backgroundColor = UIColor.orange
     }
 
     override func didReceiveMemoryWarning() {
